@@ -20,7 +20,6 @@ public class DataSourceTest {
 	@Test
 	public void testConnection(){
 		try (Connection conn = ds.getConnection()){
-			System.out.println("==");
 			System.out.println(conn);
 		} catch (Exception e) {
 			e.printStackTrace();
